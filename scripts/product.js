@@ -25,7 +25,7 @@ fetch("/Projects/Product-List/data/data.json")
         </div>`;
     });
 
-    document.querySelector(".container").innerHTML = generateHTML;
+    document.querySelector(".product-container").innerHTML = generateHTML;
   })
 
   .catch((error) => console.error("Error reading the JSON file:", error));
