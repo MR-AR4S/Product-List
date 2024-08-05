@@ -191,3 +191,23 @@ body {
   width: 15px;
   aspect-ratio: 1;
 }
+
+.order-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e75015;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.order-btn:hover {
+  filter:contrast(90%);
+}
+
+.order-btn:active {
+  opacity: .6;
+}
