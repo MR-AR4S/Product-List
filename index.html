@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/product.css">
+  <link rel="stylesheet" href="./styles/cart.css">
   
   <title>Ar4sCode | Product list with cart</title>
   <style>
@@ -25,11 +26,37 @@
   </div>
 
   <div class="cart-container">
-    <h1>Your Cart(5)</h1>
-  </div>
-  
-  <div class="attribution">
-    Coded by <a href="#">Ar4sCode</a>.
+    <div class="cart-quantity-total-count">
+      <p>Your Cart (7)</p>
+    </div>
+
+    <div class="items-container">
+      <div class="product-quantity">
+        <div class="product-quantity-detail">
+          <div class="product-quantity-name">
+            <p>Classic Tiramisu</p>
+          </div>
+          <div class="product-quantity-info">
+            <p class="item-count">1x</p>
+            <p class="item-price">$5.55</p>
+            <p class="total-price">$19.22</p>
+          </div>
+        </div>
+        <div class="remove-cart-btn">
+          <img src="./assets/images/icon-remove-item.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery-price">
+      <p>Order Total</p>
+      <p class="product-sell-price">
+        $23.59
+      </p>
+    </div>
+    <div class="cart-quantity-order">
+      <button class="confirm-order-btn">Confirm Order</button>
+    </div>
   </div>
 
   <script type="module" src="./scripts/product.js"></script>
