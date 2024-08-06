@@ -9,6 +9,10 @@ body {
   display: flex;
 }
 
+body {
+  display: flex;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -35,7 +39,7 @@ body {
 @media(max-width: 1380px){
   .product-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
 }
 
@@ -44,6 +48,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  /* body {
+    flex-direction: column;
+  } */
 }
 
 @media(max-width: 950px){
@@ -59,7 +67,7 @@ body {
 }
 
 .container h1 {
-  margin: 20px 60px;
+  margin: 10px 60px;
   font-size: 20px;
 }
 
@@ -104,10 +112,108 @@ body {
   font-weight: bold;
   font-size: 14px;
   margin-bottom: 4px;
+  text-wrap: nowrap;
 }
 
 .product-detail .product-price {
   font-size: 14px;
   font-weight: bold;
   color: #e75015;
+}
+
+/* Cart Quantity */
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px;
+}
+
+.cart-container h1 {
+  font-size: 20px;
+  text-wrap: nowrap;
+  color: #e75015;
+  margin-bottom: 20px;
+}
+
+.cart-container .cart-quantity-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-quantity {
+  margin-bottom: 10px;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.product-quantity {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.product-quantity > p {
+  text-wrap: nowrap;
+}
+
+.product-quantity-count {
+  display: flex;
+}
+
+.quantity-item-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.product-quantity-count .quantity-count {
+  color: #e75015;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 9px;
+}
+
+.product-quantity-count .item-price {
+  color: #646060;
+  font-size: 15px;
+  margin-right: 9px;
+}
+
+.product-quantity-count .quantity-total {
+  color: #646060;
+  font-size: 15px;
+  margin-right: 9px;
+  font-weight: bold;
+}
+
+.remove-quantity-btn {
+  margin-right: 10px; 
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.remove-quantity-btn img {
+  width: 15px;
+  aspect-ratio: 1;
+}
+
+.order-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e75015;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.order-btn:hover {
+  filter:contrast(90%);
+}
+
+.order-btn:active {
+  opacity: .6;
 }
