@@ -26,6 +26,21 @@ fetch("/Projects/Product-List/data/data.json")
     });
 
     document.querySelector(".product-container").innerHTML = generateHTML;
+
+    const addToCartBtns = document.querySelectorAll(".add-to-cart");
+    const thumbnailImg = document.querySelectorAll(".thumbnail-img");
+
+    addToCartBtns.forEach((btn, index) => {
+      const img = thumbnailImg[index];
+
+      btn.addEventListener("mouseenter", () => {
+        img.classList.add("border-active");
+      });
+
+      btn.addEventListener("mouseleave", () => {
+        img.classList.remove("border-active");
+      });
+    });
   })
 
   .catch((error) => console.error("Error reading the JSON file:", error));
